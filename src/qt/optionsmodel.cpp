@@ -42,12 +42,13 @@ void OptionsModel::Init()
     QSettings settings;
 
     // These are Qt-only settings:
-    nDisplayUnit = settings.value("nDisplayUnit", BitcoinUnits::QRK).toInt();
+    nDisplayUnit = settings.value("nDisplayUnit", BitcoinUnits::OFF).toInt();
     bDisplayAddresses = settings.value("bDisplayAddresses", false).toBool();
     fMinimizeToTray = settings.value("fMinimizeToTray", false).toBool();
     fMinimizeOnClose = settings.value("fMinimizeOnClose", false).toBool();
     nTransactionFee = settings.value("nTransactionFee").toLongLong();
     language = settings.value("language", "").toString();
+    bAllowSounds = settings.value("bAllowSounds", true).toBool();
 
     // These are shared with core Bitcoin; we want
     // command-line options to override the GUI settings:
@@ -196,6 +197,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return QVariant(bDisplayAddresses);
         case Language:
             return settings.value("language", "");
+        case AllowSounds:
+            return QVariant(bAllowSounds);
         default:
             return QVariant();
         }
@@ -277,6 +280,10 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
         case Language:
             settings.setValue("language", value);
             break;
+        case AllowSounds:
+            bAllowSounds = value.toBool();
+            settings.setValue("bAllowSounds", bAllowSounds);
+            break;   
         default:
             break;
         }

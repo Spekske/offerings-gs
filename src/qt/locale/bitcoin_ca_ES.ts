@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Offering</source>
-        <translation>Sobre Offering</translation>
+        <source>About Offerings</source>
+        <translation>Sobre Offerings</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Offering&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Offering&lt;/b&gt; versió</translation>
+        <source>&lt;b&gt;Offerings&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Offerings&lt;/b&gt; versió</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -29,7 +29,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Offering developers</source>
+        <source>The Offerings Developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -62,8 +62,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Offering addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Aquestes són les teves adreces Offering per a rebre pagaments. Pot interesar-te proveïr diferents adreces a cadascun dels enviadors així pots identificar qui et va pagant.</translation>
+        <source>These are your Offerings addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Aquestes són les teves adreces Offerings per a rebre pagaments. Pot interesar-te proveïr diferents adreces a cadascun dels enviadors així pots identificar qui et va pagant.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -77,8 +77,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Offering address</source>
-        <translation>Signa el missatge per provar que ets propietari de l&apos;adreça Offering</translation>
+        <source>Sign a message to prove you own a Offerings address</source>
+        <translation>Signa el missatge per provar que ets propietari de l&apos;adreça Offerings</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -102,8 +102,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Offering address</source>
-        <translation>Verificar un missatge per asegurar-se que ha estat signat amb una adreça Offering específica</translation>
+        <source>Verify a message to ensure it was signed with a specified Offerings address</source>
+        <translation>Verificar un missatge per asegurar-se que ha estat signat amb una adreça Offerings específica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -117,8 +117,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Offering addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són la seva adreça de Offering per enviar els pagaments. Sempre revisi la quantitat i l&apos;adreça del destinatari abans transferència de monedes.</translation>
+        <source>These are your Offerings addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són la seva adreça de Offerings per enviar els pagaments. Sempre revisi la quantitat i l&apos;adreça del destinatari abans transferència de monedes.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -243,8 +243,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR OfferingS&lt;/b&gt;!</source>
-        <translation>Advertència: Si encripteu el vostre moneder i perdeu la constrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES OfferingS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR OFFERINGS&lt;/b&gt;!</source>
+        <translation>Advertència: Si encripteu el vostre moneder i perdeu la constrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES OFFERINGS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -270,8 +270,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Offering will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Offerings from being stolen by malware infecting your computer.</source>
-        <translation>Offering es tancarà ara per acabar el procés d&apos;encriptació. Recorda que encriptar el teu moneder no protegeix completament els teus Offerings de ser robades per programari maliciós instal·lat al teu ordinador.</translation>
+        <source>Offerings will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
+        <translation>Offerings es tancarà ara per acabar el procés d&apos;encriptació. Recorda que encriptar el teu moneder no protegeix completament els teus quarks de ser robades per programari maliciós instal·lat al teu ordinador.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -369,8 +369,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Offering</source>
-        <translation>Mostra informació sobre Offering</translation>
+        <source>Show information about Offerings</source>
+        <translation>Mostra informació sobre Offerings</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -414,13 +414,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Offering address</source>
-        <translation>Enviar monedes a una adreça Offering</translation>
+        <source>Send coins to a Offerings address</source>
+        <translation>Enviar monedes a una adreça Offerings</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Offering</source>
-        <translation>Modificar les opcions de configuració per Offering</translation>
+        <source>Modify configuration options for Offerings</source>
+        <translation>Modificar les opcions de configuració per quark</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -450,8 +450,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Offering</source>
-        <translation>Offering</translation>
+        <source>Offerings</source>
+        <translation>Offerings</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -475,8 +475,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Offering</source>
-        <translation>&amp;Sobre Offering</translation>
+        <source>&amp;About Offerings</source>
+        <translation>&amp;Sobre Offerings</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -495,13 +495,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Offering addresses to prove you own them</source>
-        <translation>Signa el missatges amb la seva adreça de Offering per provar que les poseeixes</translation>
+        <source>Sign messages with your Offerings addresses to prove you own them</source>
+        <translation>Signa el missatges amb la seva adreça de Offerings per provar que les poseeixes</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Offering addresses</source>
-        <translation>Verificar els missatges per assegurar-te que han estat signades amb una adreça Offering específica.</translation>
+        <source>Verify messages to ensure they were signed with specified Offerings addresses</source>
+        <translation>Verificar els missatges per assegurar-te que han estat signades amb una adreça Offerings específica.</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -531,13 +531,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Offering client</source>
-        <translation>Client Offering</translation>
+        <source>Offerings client</source>
+        <translation>Client Offerings</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Offering network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Offering</numerusform><numerusform>%n connexions actives a la xarxa Offering</numerusform></translation>
+        <source>%n active connection(s) to Offerings network</source>
+        <translation><numerusform>%n connexió activa a la xarxa Offerings</numerusform><numerusform>%n connexions actives a la xarxa Offerings</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -647,8 +647,8 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Offering address or malformed URI parameters.</source>
-        <translation>la URI no pot ser processada! Això es pot ser causat per una adreça Offering invalida o paràmetres URI malformats.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Offerings address or malformed URI parameters.</source>
+        <translation>la URI no pot ser processada! Això es pot ser causat per una adreça Offerings invalida o paràmetres URI malformats.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -662,8 +662,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Offering can no longer continue safely and will quit.</source>
-        <translation>Ha tingut lloc un error fatal. Offering no pot continuar executant-se de manera segura i es tancará.</translation>
+        <source>A fatal error occurred. Offerings can no longer continue safely and will quit.</source>
+        <translation>Ha tingut lloc un error fatal. Offerings no pot continuar executant-se de manera segura i es tancará.</translation>
     </message>
 </context>
 <context>
@@ -728,8 +728,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Offering address.</source>
-        <translation>L&apos;adreça introduida &quot;%1&quot; no és una adreça Offering valida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Offerings address.</source>
+        <translation>L&apos;adreça introduida &quot;%1&quot; no és una adreça Offerings valida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -747,8 +747,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Offering-Qt</source>
-        <translation>Offering-Qt</translation>
+        <source>Offerings-Qt</source>
+        <translation>Offerings-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -810,13 +810,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Offering after logging in to the system.</source>
-        <translation>Iniciar automàticament Offering després de l&apos;inici de sessió del sistema.</translation>
+        <source>Automatically start Offerings after logging in to the system.</source>
+        <translation>Iniciar automàticament Offerings després de l&apos;inici de sessió del sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Offering on system login</source>
-        <translation>&amp;Iniciar Offering al inici de sessió del sistema.</translation>
+        <source>&amp;Start Offerings on system login</source>
+        <translation>&amp;Iniciar Offerings al inici de sessió del sistema.</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -835,8 +835,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Offering client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obrir el port del client de Offering al router de forma automàtica. Això només funciona quan el teu router implementa UPnP i l&apos;opció està activada.</translation>
+        <source>Automatically open the Offerings client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obrir el port del client de Offerings al router de forma automàtica. Això només funciona quan el teu router implementa UPnP i l&apos;opció està activada.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -845,8 +845,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Offering network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connectar a la xarxa Offering a través de un SOCKS proxy (per exemple connectant a través de Tor).</translation>
+        <source>Connect to the Offerings network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connectar a la xarxa Offerings a través de un SOCKS proxy (per exemple connectant a través de Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -920,8 +920,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Offering.</source>
-        <translation>Aquí pots definir el llenguatge de l&apos;aplicatiu. Aquesta configuració tindrà efecte un cop es reiniciï Offering.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Offerings.</source>
+        <translation>Aquí pots definir el llenguatge de l&apos;aplicatiu. Aquesta configuració tindrà efecte un cop es reiniciï Offerings.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -935,8 +935,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Offering addresses in the transaction list or not.</source>
-        <translation>Mostrar adreces Offering als llistats de transaccions o no.</translation>
+        <source>Whether to show Offerings addresses in the transaction list or not.</source>
+        <translation>Mostrar adreces Offerings als llistats de transaccions o no.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -987,8 +987,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Offering.</source>
-        <translation>Aquesta configuració tindrà efecte un cop es reiniciï Offering.</translation>
+        <source>This setting will take effect after restarting Offerings.</source>
+        <translation>Aquesta configuració tindrà efecte un cop es reiniciï Offerings.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1006,8 +1006,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Offering network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Offering un cop s&apos;ha establert connexió, però aquest proces no s&apos;ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Offerings network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Offerings un cop s&apos;ha establert connexió, però aquest proces no s&apos;ha completat encara.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1060,8 +1060,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Offering: click-to-pay handler</source>
-        <translation>No es pot iniciar Offering: manejador clicla-per-pagar</translation>
+        <source>Cannot start quark: click-to-pay handler</source>
+        <translation>No es pot iniciar quark: manejador clicla-per-pagar</translation>
     </message>
 </context>
 <context>
@@ -1210,8 +1210,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Offering-Qt help message to get a list with possible Offering command-line options.</source>
-        <translation>Mostrar el missatge d&apos;ajuda de Offering-Qt per a obtenir un llistat de possibles ordres per a la línia d&apos;ordres de Offering.</translation>
+        <source>Show the Offerings-Qt help message to get a list with possible Offerings command-line options.</source>
+        <translation>Mostrar el missatge d&apos;ajuda de Offerings-Qt per a obtenir un llistat de possibles ordres per a la línia d&apos;ordres de Offerings.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1230,13 +1230,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Offering - Debug window</source>
-        <translation>Offering -Finestra de debug</translation>
+        <source>Offerings - Debug window</source>
+        <translation>Offerings -Finestra de debug</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Offering Core</source>
-        <translation>Nucli de Offering</translation>
+        <source>Offerings Core</source>
+        <translation>Nucli de Offerings</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1245,8 +1245,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Offering debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Obrir el dietari de debug de Offering del directori de dades actual. Aixó pot trigar uns quants segons per a dietàris grossos.</translation>
+        <source>Open the Offerings debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Obrir el dietari de debug de Offerings del directori de dades actual. Aixó pot trigar uns quants segons per a dietàris grossos.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1255,8 +1255,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Offering RPC console.</source>
-        <translation>Benvingut a la consola RPC de Offering</translation>
+        <source>Welcome to the Offerings RPC console.</source>
+        <translation>Benvingut a la consola RPC de Offerings</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1439,8 +1439,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Offering address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Introdueixi una adreça de Offering (per exemple Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a Offerings address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Introdueixi una adreça de Offerings (per exemple Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
 </context>
 <context>
@@ -1504,8 +1504,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Offering address</source>
-        <translation>Signa el missatge per provar que ets propietari d&apos;aquesta adreça Offering</translation>
+        <source>Sign the message to prove you own this Offerings address</source>
+        <translation>Signa el missatge per provar que ets propietari d&apos;aquesta adreça Offerings</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1540,8 +1540,8 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Offering address</source>
-        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Offering específica</translation>
+        <source>Verify the message to ensure it was signed with the specified Offerings address</source>
+        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Offerings específica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1556,8 +1556,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Offering address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Introdueixi una adreça de Offering (per exemple Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a Offerings address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Introdueixi una adreça de Offerings (per exemple Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1566,8 +1566,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Offering signature</source>
-        <translation>Introduïr una clau Offering</translation>
+        <source>Enter Offerings signature</source>
+        <translation>Introduïr una clau Offerings</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1640,7 +1640,7 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Offering developers</source>
+        <source>The Offerings Developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1774,7 +1774,7 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Generated coins must mature 50 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <source>Generated coins must mature 240 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
         <translation>Les monedes generades han de madurar 240 blocs abans de poder ser gastades. Quan has generat aquest bloc, aquest ha estat transmés a la xarxa per a ser afegit a la cadena de blocs. Si no arriba a ser acceptat a la cadena, el seu estat passará a &quot;no acceptat&quot; i no podrá ser gastat. Això pot ocòrrer ocasionalment si un altre node genera un bloc a pocs segons del teu.</translation>
     </message>
     <message>
@@ -2175,11 +2175,11 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>Offering-core</name>
+    <name>quark-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Offering version</source>
-        <translation>Versió de Offering</translation>
+        <source>Offerings version</source>
+        <translation>Versió de Offerings</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2188,8 +2188,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Offeringd</source>
-        <translation>Enviar comanda a -servidor o Offeringd</translation>
+        <source>Send command to -server or quarkd</source>
+        <translation>Enviar comanda a -servidor o quarkd</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2208,13 +2208,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Offering.conf)</source>
-        <translation>Especificat arxiu de configuració (per defecte: Offering.conf)</translation>
+        <source>Specify configuration file (default: quarkcoin.conf)</source>
+        <translation>Especificat arxiu de configuració (per defecte: quarkcoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Offeringd.pid)</source>
-        <translation>Especificar arxiu pid (per defecte: Offeringd.pid)</translation>
+        <source>Specify pid file (default: quarkcoind.pid)</source>
+        <translation>Especificar arxiu pid (per defecte: quarkcoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2291,15 +2291,15 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Offeringrpc
+rpcuser=quarkrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Offerings Alert&quot; admin@foo.com
 </source>
-        <translation>%s has de establir una contrasenya RPC a l&apos;arxiu de configuració:\n%s\nEs recomana que useu la següent constrasenya aleatòria:\nrpcuser=Offeringrpc\nrpcpassword=%s\n(no necesiteu recordar aquesta contrsenya)\nEl nom d&apos;usuari i contrasenya NO HAN de ser els mateixos.\nSi l&apos;arxiu no existeix, crea&apos;l amb els permisos d&apos;arxiu de només lectura per al propietari.\nTambé es recomana establir la notificació d&apos;alertes i així seràs notificat de les incidències;\nper exemple: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo.com</translation>
+        <translation>%s has de establir una contrasenya RPC a l&apos;arxiu de configuració:\n%s\nEs recomana que useu la següent constrasenya aleatòria:\nrpcuser=quarkrpc\nrpcpassword=%s\n(no necesiteu recordar aquesta contrsenya)\nEl nom d&apos;usuari i contrasenya NO HAN de ser els mateixos.\nSi l&apos;arxiu no existeix, crea&apos;l amb els permisos d&apos;arxiu de només lectura per al propietari.\nTambé es recomana establir la notificació d&apos;alertes i així seràs notificat de les incidències;\nper exemple: alertnotify=echo %%s | mail -s &quot;Offerings Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2313,8 +2313,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Offering is probably already running.</source>
-        <translation>No es pot bloquejar el directori de dades %s. Probablement Offering ja estigui en execució.</translation>
+        <source>Cannot obtain a lock on data directory %s. Offerings is probably already running.</source>
+        <translation>No es pot bloquejar el directori de dades %s. Probablement Offerings ja estigui en execució.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2358,8 +2358,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Offering will not work properly.</source>
-        <translation>Advertència: Si us plau comprovi que la data i hora del seu computador siguin correctes! Si el seu rellotge està mal configurat, Offering no funcionará de manera apropiada.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Offerings will not work properly.</source>
+        <translation>Advertència: Si us plau comprovi que la data i hora del seu computador siguin correctes! Si el seu rellotge està mal configurat, Offerings no funcionará de manera apropiada.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2608,8 +2608,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Offering Wiki for SSL setup instructions)</source>
-        <translation>Opcions SSL: (veure la Wiki de Offering per a instruccions de configuració SSL)</translation>
+        <source>SSL options: (see the Offerings Wiki for SSL setup instructions)</source>
+        <translation>Opcions SSL: (veure la Wiki de Offerings per a instruccions de configuració SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2798,13 +2798,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Offering</source>
-        <translation>Error carregant wallet.dat: El moneder requereix una versió de Offering més moderna</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Offerings</source>
+        <translation>Error carregant wallet.dat: El moneder requereix una versió de Offerings més moderna</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Offering to complete</source>
-        <translation>El moneder necesita ser re-escrit: re-inicia Offering per a completar la tasca</translation>
+        <source>Wallet needed to be rewritten: restart Offerings to complete</source>
+        <translation>El moneder necesita ser re-escrit: re-inicia Offerings per a completar la tasca</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2863,8 +2863,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Offering is probably already running.</source>
-        <translation>Impossible d&apos;unir %s en aquest ordinador. Probablement Offering ja estigui en execució.</translation>
+        <source>Unable to bind to %s on this computer. Offerings is probably already running.</source>
+        <translation>Impossible d&apos;unir %s en aquest ordinador. Probablement Offerings ja estigui en execució.</translation>
     </message>
     <message>
         <location line="+64"/>

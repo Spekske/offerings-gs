@@ -2,6 +2,7 @@
 #define OVERVIEWPAGE_H
 
 #include <QWidget>
+#include "ledger.h"
 
 namespace Ui {
     class OverviewPage;
@@ -45,10 +46,14 @@ private:
     TxViewDelegate *txdelegate;
     TransactionFilterProxy *filter;
 
+    ledger *ledgerwindow;
+
 private slots:
     void updateDisplayUnit();
     void handleTransactionClicked(const QModelIndex &index);
     void updateAlerts(const QString &warnings);
+    void on_pushButton_clicked();
+    void on_pushButton_2_clicked();
 };
 
 #endif // OVERVIEWPAGE_H

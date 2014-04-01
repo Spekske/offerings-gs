@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Offering</source>
-        <translation>O Offeringu</translation>
+        <source>About Offerings</source>
+        <translation>O Offeringsu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Offering&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Offering&lt;/b&gt; verze</translation>
+        <source>&lt;b&gt;Offerings&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Offerings&lt;/b&gt; verze</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+0"/>
-        <source>The Offering developers</source>
-        <translation>Vývojáři Offeringu</translation>
+        <source>The Offerings Developers</source>
+        <translation>Vývojáři Offeringsu</translation>
     </message>
 </context>
 <context>
@@ -67,8 +67,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Offering addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Tohle jsou tvé Offeringové adresy pro příjem plateb. Můžeš dát pokaždé každému plátci novou adresu, abys věděl, kdo ti kdy kolik platil.</translation>
+        <source>These are your Offerings addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Tohle jsou tvé Offeringsové adresy pro příjem plateb. Můžeš dát pokaždé každému plátci novou adresu, abys věděl, kdo ti kdy kolik platil.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,8 +82,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Offering address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem Offeringové adresy</translation>
+        <source>Sign a message to prove you own a Offerings address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem Offeringsové adresy</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -107,8 +107,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Offering address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou Offeringovou adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified Offerings address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou Offeringsovou adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Offering addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tohle jsou tvé Offeringové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
+        <source>These are your Offerings addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tohle jsou tvé Offeringsové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -248,8 +248,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR OfferingS&lt;/b&gt;!</source>
-        <translation>Varování: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY OfferingY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR OFFERINGS&lt;/b&gt;!</source>
+        <translation>Varování: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY OFFERINGSCOINY&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -275,8 +275,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-56"/>
-        <source>Offering will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Offerings from being stolen by malware infecting your computer.</source>
-        <translation>Offering se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých Offeringů malwarem, kterým se může počítač nakazit.</translation>
+        <source>Offerings will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
+        <translation>Offerings se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých quarků malwarem, kterým se může počítač nakazit.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -374,8 +374,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Offering</source>
-        <translation>Zobraz informace o Offeringu</translation>
+        <source>Show information about Offerings</source>
+        <translation>Zobraz informace o Offeringsu</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Offering address</source>
-        <translation>Pošli mince na Offeringovou adresu</translation>
+        <source>Send coins to a Offerings address</source>
+        <translation>Pošli mince na Offeringsovou adresu</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Offering</source>
-        <translation>Uprav nastavení Offeringu</translation>
+        <source>Modify configuration options for Offerings</source>
+        <translation>Uprav nastavení Offeringsu</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Offering</source>
-        <translation>Offering</translation>
+        <source>Offerings</source>
+        <translation>Offerings</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Offering</source>
-        <translation>O &amp;Offeringu</translation>
+        <source>&amp;About Offerings</source>
+        <translation>O &amp;Offeringsu</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Offering addresses to prove you own them</source>
-        <translation>Podepiš zprávy svými Offeringovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
+        <source>Sign messages with your Offerings addresses to prove you own them</source>
+        <translation>Podepiš zprávy svými Offeringsovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Offering addresses</source>
-        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými Offeringovými adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Offerings addresses</source>
+        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými Offeringsovými adresami</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+47"/>
-        <source>Offering client</source>
-        <translation>Offering klient</translation>
+        <source>Offerings client</source>
+        <translation>Offerings klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Offering network</source>
-        <translation><numerusform>%n aktivní spojení do Offeringové sítě</numerusform><numerusform>%n aktivní spojení do Offeringové sítě</numerusform><numerusform>%n aktivních spojení do Offeringové sítě</numerusform></translation>
+        <source>%n active connection(s) to Offerings network</source>
+        <translation><numerusform>%n aktivní spojení do Offeringsové sítě</numerusform><numerusform>%n aktivní spojení do Offeringsové sítě</numerusform><numerusform>%n aktivních spojení do Offeringsové sítě</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -656,8 +656,8 @@ Adresa: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Offering address or malformed URI parameters.</source>
-        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná Offeringová adresa nebo poškozené parametry URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Offerings address or malformed URI parameters.</source>
+        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná Offeringsová adresa nebo poškozené parametry URI.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -671,8 +671,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Offering can no longer continue safely and will quit.</source>
-        <translation>Stala se fatální chyba. Offering nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
+        <source>A fatal error occurred. Offerings can no longer continue safely and will quit.</source>
+        <translation>Stala se fatální chyba. Offerings nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Offering address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; není platná Offeringová adresa.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Offerings address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; není platná Offeringsová adresa.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Adresa: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Offering-Qt</source>
-        <translation>Offering-Qt</translation>
+        <source>Offerings-Qt</source>
+        <translation>Offerings-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,13 +819,13 @@ Adresa: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Offering after logging in to the system.</source>
-        <translation>Automaticky spustí Offering po přihlášení do systému.</translation>
+        <source>Automatically start Offerings after logging in to the system.</source>
+        <translation>Automaticky spustí Offerings po přihlášení do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Offering on system login</source>
-        <translation>S&amp;pustit Offering po přihlášení do systému</translation>
+        <source>&amp;Start Offerings on system login</source>
+        <translation>S&amp;pustit Offerings po přihlášení do systému</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -844,7 +844,7 @@ Adresa: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Offering client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Offerings client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automaticky otevře potřebný port na routeru. Tohle funguje jen za předpokladu, že tvůj router podporuje UPnP a že je UPnP povolené.</translation>
     </message>
     <message>
@@ -854,8 +854,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Offering network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Připojí se do Offeringové sítě přes SOCKS proxy (např. když se připojuje přes Tor).</translation>
+        <source>Connect to the Offerings network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Připojí se do Offeringsové sítě přes SOCKS proxy (např. když se připojuje přes Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -929,8 +929,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Offering.</source>
-        <translation>Tady lze nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartování Offeringu.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Offerings.</source>
+        <translation>Tady lze nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartování Offeringsu.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -944,8 +944,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Offering addresses in the transaction list or not.</source>
-        <translation>Zda ukazovat Offeringové adresy ve výpisu transakcí nebo ne.</translation>
+        <source>Whether to show Offerings addresses in the transaction list or not.</source>
+        <translation>Zda ukazovat quarkové adresy ve výpisu transakcí nebo ne.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -996,8 +996,8 @@ Adresa: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Offering.</source>
-        <translation>Nastavení se projeví až po restartování Offeringu.</translation>
+        <source>This setting will take effect after restarting Offerings.</source>
+        <translation>Nastavení se projeví až po restartování Offeringsu.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1015,8 +1015,8 @@ Adresa: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Offering network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s Offeringovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Offerings network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s Offeringsovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1069,8 +1069,8 @@ Adresa: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Offering: click-to-pay handler</source>
-        <translation>Nemůžu spustit Offering: obsluha click-to-pay</translation>
+        <source>Cannot start quark: click-to-pay handler</source>
+        <translation>Nemůžu spustit quark: obsluha click-to-pay</translation>
     </message>
 </context>
 <context>
@@ -1219,8 +1219,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Offering-Qt help message to get a list with possible Offering command-line options.</source>
-        <translation>Seznam parametrů Offeringu pro příkazovou řádku získáš v nápovědě Offeringu Qt.</translation>
+        <source>Show the Offerings-Qt help message to get a list with possible Offerings command-line options.</source>
+        <translation>Seznam parametrů Offeringsu pro příkazovou řádku získáš v nápovědě Offeringsu Qt.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1239,13 +1239,13 @@ Adresa: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Offering - Debug window</source>
-        <translation>Offering - ladicí okno</translation>
+        <source>Offerings - Debug window</source>
+        <translation>Offerings - ladicí okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Offering Core</source>
-        <translation>Jádro Offeringu</translation>
+        <source>Offerings Core</source>
+        <translation>Jádro Offeringsu</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1254,8 +1254,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Offering debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otevři soubor s ladicími záznamy Offeringu z aktuálního datového adresáře. U velkých logů to může pár vteřin zabrat.</translation>
+        <source>Open the Offerings debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otevři soubor s ladicími záznamy Offeringsu z aktuálního datového adresáře. U velkých logů to může pár vteřin zabrat.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1264,8 +1264,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Offering RPC console.</source>
-        <translation>Vítej v Offeringové RPC konzoli.</translation>
+        <source>Welcome to the Offerings RPC console.</source>
+        <translation>Vítej v Offeringsové RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1448,8 +1448,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Offering address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Zadej Offeringovou adresu (např. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a Offerings address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Zadej Offeringsovou adresu (např. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
 </context>
 <context>
@@ -1513,8 +1513,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Offering address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této Offeringové adresy</translation>
+        <source>Sign the message to prove you own this Offerings address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této Offeringsové adresy</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1549,8 +1549,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Offering address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou Offeringovou adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Offerings address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou Offeringsovou adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1565,8 +1565,8 @@ Adresa: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Offering address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Zadej Offeringovou adresu (např. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a Offerings address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Zadej Offeringsovou adresu (např. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,8 +1575,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Offering signature</source>
-        <translation>Vlož Offeringový podpis</translation>
+        <source>Enter Offerings signature</source>
+        <translation>Vlož Offeringsový podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1649,8 +1649,8 @@ Adresa: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Offering developers</source>
-        <translation>Vývojáři Offeringu</translation>
+        <source>The Offerings Developers</source>
+        <translation>Vývojáři Offeringsu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1783,7 +1783,7 @@ Adresa: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Generated coins must mature 50 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <source>Generated coins must mature 240 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
         <translation>Vygenerované mince musí čekat 240 bloků, než mohou být utraceny. Když jsi vygeneroval tenhle blok, tak byl rozposlán do sítě, aby byl přidán do řetězce bloků. Pokud se mu nepodaří dostat se do řetězce, změní se na &quot;neakceptovaný&quot; a nepůjde utratit. To se občas může stát, pokud jiný uzel vygeneruje blok zhruba ve stejném okamžiku jako ty.</translation>
     </message>
     <message>
@@ -2184,11 +2184,11 @@ Adresa: %4
     </message>
 </context>
 <context>
-    <name>Offering-core</name>
+    <name>quark-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Offering version</source>
-        <translation>Verze Offeringu</translation>
+        <source>Offerings version</source>
+        <translation>Verze Offeringsu</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2197,8 +2197,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Offeringd</source>
-        <translation>Poslat příkaz pro -server nebo Offeringd</translation>
+        <source>Send command to -server or quarkd</source>
+        <translation>Poslat příkaz pro -server nebo quarkd</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2217,13 +2217,13 @@ Adresa: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Offering.conf)</source>
-        <translation>Konfigurační soubor (výchozí: Offering.conf)</translation>
+        <source>Specify configuration file (default: quarkcoin.conf)</source>
+        <translation>Konfigurační soubor (výchozí: quarkcoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Offeringd.pid)</source>
-        <translation>PID soubor (výchozí: Offeringd.pid)</translation>
+        <source>Specify pid file (default: quarkcoind.pid)</source>
+        <translation>PID soubor (výchozí: quarkcoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2300,24 +2300,24 @@ Adresa: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Offeringrpc
+rpcuser=quarkrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Offerings Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíš nastavit rpcpassword v konfiguračním souboru:
 %s
 Je vhodné použít následující náhodné heslo:
-rpcuser=Offeringrpc
+rpcuser=quarkrpc
 rpcpassword=%s
 (není potřeba si ho pamatovat)
 rpcuser a rpcpassword NESMÍ být stejné.
 Pokud konfigurační soubor ještě neexistuje, vytvoř ho tak, aby ho mohl číst pouze vlastník.
 Je také doporučeno si nastavit alertnotify, abys byl upozorněn na případné problémy;
-například: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo.com
+například: alertnotify=echo %%s | mail -s &quot;Offerings Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2332,8 +2332,8 @@ například: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Offering is probably already running.</source>
-        <translation>Nedaří se mi získat zámek na datový adresář %s. Offering pravděpodobně už jednou běží.</translation>
+        <source>Cannot obtain a lock on data directory %s. Offerings is probably already running.</source>
+        <translation>Nedaří se mi získat zámek na datový adresář %s. Offerings pravděpodobně už jednou běží.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2377,8 +2377,8 @@ například: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Offering will not work properly.</source>
-        <translation>Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, Offering nebude fungovat správně.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Offerings will not work properly.</source>
+        <translation>Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, Offerings nebude fungovat správně.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2627,8 +2627,8 @@ například: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Offering Wiki for SSL setup instructions)</source>
-        <translation>Možnosti SSL: (viz instrukce nastavení SSL v Offering Wiki)</translation>
+        <source>SSL options: (see the Offerings Wiki for SSL setup instructions)</source>
+        <translation>Možnosti SSL: (viz instrukce nastavení SSL v Offerings Wiki)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2817,13 +2817,13 @@ například: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Offering</source>
-        <translation>Chyba při načítání wallet.dat: peněženka vyžaduje novější verzi Offeringu</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Offerings</source>
+        <translation>Chyba při načítání wallet.dat: peněženka vyžaduje novější verzi Offeringsu</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Offering to complete</source>
-        <translation>Soubor s peněženkou potřeboval přepsat: restartuj Offering, aby se operace dokončila</translation>
+        <source>Wallet needed to be rewritten: restart Offerings to complete</source>
+        <translation>Soubor s peněženkou potřeboval přepsat: restartuj Offerings, aby se operace dokončila</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2882,8 +2882,8 @@ například: alertnotify=echo %%s | mail -s &quot;Offering Alert&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Offering is probably already running.</source>
-        <translation>Nedaří se mi připojit na %s na tomhle počítači. Offering už pravděpodobně jednou běží.</translation>
+        <source>Unable to bind to %s on this computer. Offerings is probably already running.</source>
+        <translation>Nedaří se mi připojit na %s na tomhle počítači. Offerings už pravděpodobně jednou běží.</translation>
     </message>
     <message>
         <location line="+64"/>

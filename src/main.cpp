@@ -1159,6 +1159,76 @@ int64 static GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
     else if(nHeight == 306080) {nSubsidy = 1000 * COIN;}
 	else if(nHeight == 310666) {nSubsidy = 10000 * COIN;}
 	
+		//another cycle, falling once again upon the equinox after the second great halving
+	else if(nHeight == 571440) {nSubsidy = .00000001 * COIN;}
+    else if(nHeight == 572880) {nSubsidy = .0000001 * COIN;}
+    else if(nHeight == 574320) {nSubsidy = .000001 * COIN;}
+    else if(nHeight == 575760) {nSubsidy = .00001 * COIN;}
+    else if(nHeight == 577200) {nSubsidy = .0001 * COIN;}
+    else if(nHeight == 578640) {nSubsidy = .001 * COIN;}
+    else if(nHeight == 580080) {nSubsidy = .01 * COIN;}
+    else if(nHeight == 581520) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 582960) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 584400) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 585840) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 587280) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 588720) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 590160) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 591600) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 593040) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 594480) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 595290) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 597360) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 598800) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 600240) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 601680) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 603120) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 604560) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 606000) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 607440) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 608880) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 610320) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 611760) {nSubsidy = 1000 * COIN;}
+    else if(nHeight == 613200) {nSubsidy = 1000 * COIN;}
+    else if(nHeight == 614640) {nSubsidy = 1000 * COIN;}
+    else if(nHeight == 616080) {nSubsidy = 1000 * COIN;}
+	else if(nHeight == 620666) {nSubsidy = 10000 * COIN;}
+	
+		//the fourth great halving brings sub 1 offering rewards and so the ritual begins again!
+	else if(nHeight == 881440) {nSubsidy = .00000001 * COIN;}
+    else if(nHeight == 882880) {nSubsidy = .0000001 * COIN;}
+    else if(nHeight == 884320) {nSubsidy = .000001 * COIN;}
+    else if(nHeight == 885760) {nSubsidy = .00001 * COIN;}
+    else if(nHeight == 887200) {nSubsidy = .0001 * COIN;}
+    else if(nHeight == 888640) {nSubsidy = .001 * COIN;}
+    else if(nHeight == 890080) {nSubsidy = .01 * COIN;}
+    else if(nHeight == 891520) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 892960) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 894400) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 895840) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 897280) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 898720) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 900160) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 901600) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 903040) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 904480) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 905290) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 907360) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 908800) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 910240) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 911680) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 913120) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 914560) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 916000) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 917440) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 918880) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 920320) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 921760) {nSubsidy = 1000 * COIN;}
+    else if(nHeight == 923200) {nSubsidy = 1000 * COIN;}
+    else if(nHeight == 924640) {nSubsidy = 1000 * COIN;}
+    else if(nHeight == 926080) {nSubsidy = 1000 * COIN;}
+	else if(nHeight == 930666) {nSubsidy = 10000 * COIN;}
+	
     nSubsidy >>= (nHeight / 259200);
     if (nSubsidy < nBlockRewardMinimumCoin) {nSubsidy = nBlockRewardMinimumCoin;}
 

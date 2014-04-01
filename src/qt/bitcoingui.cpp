@@ -50,6 +50,9 @@
 #include <QSettings>
 #include <QDesktopWidget>
 #include <QListWidget>
+#include <QPainter>
+#include <QSound>
+#include <QSizeGrip>
 
 #include <iostream>
 
@@ -67,7 +70,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
     prevBlocks(0)
 {
     restoreWindowGeometry();
-    setWindowTitle(tr("Offering") + " - " + tr("Wallet"));
+    setWindowTitle(tr("Offerings to Cthulhu") + "" + tr(""));
 #ifndef Q_OS_MAC
     QApplication::setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
@@ -130,7 +133,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
     QString curStyle = QApplication::style()->metaObject()->className();
     if(curStyle == "QWindowsStyle" || curStyle == "QWindowsXPStyle")
     {
-        progressBar->setStyleSheet("QProgressBar { background-color: #000000; border: 1px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #FF8000, stop: 1 orange); border-radius: 7px; margin: 0px; }");
+        progressBar->setStyleSheet("QProgressBar { background-color: #e8e8e8; border: 1px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #FF8000, stop: 1 orange); border-radius: 7px; margin: 0px; }");
     }
 
     statusBar()->addWidget(progressBarLabel);
@@ -161,36 +164,36 @@ void BitcoinGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
 
-    overviewAction = new QAction(QIcon(":/icons/overview"), tr("&Eye of Cthulhu"), this);
-    overviewAction->setStatusTip(tr("In dreamland he awaits you..."));
+    overviewAction = new QAction(QIcon(":/icons/overview"), tr("&The Eye of Cthuhlu"), this);
+    overviewAction->setStatusTip(tr("Gaze upon thine offerings"));
     overviewAction->setToolTip(overviewAction->statusTip());
     overviewAction->setCheckable(true);
     overviewAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
     tabGroup->addAction(overviewAction);
 
-    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Give Offerings"), this);
-    sendCoinsAction->setStatusTip(tr("Send Offerings to another worshipper..."));
+    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Give Offering"), this);
+    sendCoinsAction->setStatusTip(tr("Send coins unto another cultist"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
 
-    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive Offerings"), this);
-    receiveCoinsAction->setStatusTip(tr("Take Offerings from a fellow worshipper..."));
+    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Take Offering"), this);
+    receiveCoinsAction->setStatusTip(tr("Allow thy fellow cultists to bestow honor upon thee"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
     tabGroup->addAction(receiveCoinsAction);
 
-    historyAction = new QAction(QIcon(":/icons/history"), tr("&Ledger"), this);
-    historyAction->setStatusTip(tr("See a list of your transgressions..."));
+    historyAction = new QAction(QIcon(":/icons/history"), tr("&Transgressions"), this);
+    historyAction->setStatusTip(tr("A list of your sins"));
     historyAction->setToolTip(historyAction->statusTip());
     historyAction->setCheckable(true);
     historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_4));
     tabGroup->addAction(historyAction);
 
-    addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&Codex"), this);
-    addressBookAction->setStatusTip(tr("See a list of your fellow worshippers..."));
+    addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&Fellow Cultists"), this);
+    addressBookAction->setStatusTip(tr("All of your fellow worshipers with whom you've transgressed"));
     addressBookAction->setToolTip(addressBookAction->statusTip());
     addressBookAction->setCheckable(true);
     addressBookAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
@@ -211,7 +214,7 @@ void BitcoinGUI::createActions()
     quitAction->setStatusTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Cthulhu Offerings"), this);
+    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Offerings"), this);
     aboutAction->setStatusTip(tr("Show information about Offerings"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
@@ -223,20 +226,20 @@ void BitcoinGUI::createActions()
     toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Show / Hide"), this);
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
 
-    encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
-    encryptWalletAction->setStatusTip(tr("Encrypt the private keys that belong to your wallet"));
+    encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Spellbind Altar..."), this);
+    encryptWalletAction->setStatusTip(tr("Encrypt your altar with 2d20 power. "));
     encryptWalletAction->setCheckable(true);
-    backupWalletAction = new QAction(QIcon(":/icons/filesave"), tr("&Backup Wallet..."), this);
-    backupWalletAction->setStatusTip(tr("Backup wallet to another location"));
-    changePassphraseAction = new QAction(QIcon(":/icons/key"), tr("&Change Passphrase..."), this);
-    changePassphraseAction->setStatusTip(tr("Change the passphrase used for wallet encryption"));
-    signMessageAction = new QAction(QIcon(":/icons/edit"), tr("Sign &message..."), this);
-    signMessageAction->setStatusTip(tr("Sign messages with your Offerings addresses to prove you own them"));
-    verifyMessageAction = new QAction(QIcon(":/icons/transaction_0"), tr("&Verify message..."), this);
-    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified Offerings addresses"));
+    backupWalletAction = new QAction(QIcon(":/icons/filesave"), tr("&Reconstruct Altar..."), this);
+    backupWalletAction->setStatusTip(tr("Copy altar to another location"));
+    changePassphraseAction = new QAction(QIcon(":/icons/key"), tr("&Change Words of Power..."), this);
+    changePassphraseAction->setStatusTip(tr("Change the passphrase used for spellbinding your altar"));
+    signMessageAction = new QAction(QIcon(":/icons/edit"), tr("Spellbind &message..."), this);
+    signMessageAction->setStatusTip(tr("Mark messages with your Offering prove you thou art justified"));
+    verifyMessageAction = new QAction(QIcon(":/icons/transaction_0"), tr("&Decode message..."), this);
+    verifyMessageAction->setStatusTip(tr("Verify the faith of another through mathematics"));
 
-    openRPCConsoleAction = new QAction(QIcon(":/icons/debugwindow"), tr("&Console"), this);
-    openRPCConsoleAction->setStatusTip(tr("Speak unto the Great Old One directly..."));
+    openRPCConsoleAction = new QAction(QIcon(":/icons/debugwindow"), tr("&Text Based Worship"), this);
+    openRPCConsoleAction->setStatusTip(tr("Speak directly to the Great Old Ones using human language"));
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
@@ -261,33 +264,32 @@ void BitcoinGUI::createMenuBar()
 #endif
 
     // Configure the menus
-    QMenu *file = appMenuBar->addMenu(tr("&File"));
+    QMenu *file = appMenuBar->addMenu(tr("&Actions"));
     file->addAction(backupWalletAction);
+    file->addAction(encryptWalletAction);
+    file->addAction(changePassphraseAction);
     file->addAction(signMessageAction);
     file->addAction(verifyMessageAction);
     file->addSeparator();
+    file->addAction(optionsAction);
     file->addAction(quitAction);
 
-    QMenu *settings = appMenuBar->addMenu(tr("&Settings"));
-    settings->addAction(encryptWalletAction);
-    settings->addAction(changePassphraseAction);
-    settings->addSeparator();
-    settings->addAction(optionsAction);
 
-    QMenu *help = appMenuBar->addMenu(tr("&Help"));
+
+    QMenu *help = appMenuBar->addMenu(tr("&About"));
     help->addAction(aboutAction);
     help->addAction(aboutQtAction);
 }
 
 void BitcoinGUI::createToolBars()
 {
-    QToolBar *toolbar = addToolBar(tr("Tabs toolbar"));
+    QToolBar *toolbar = addToolBar(tr("Tentaclebar"));
     toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
     toolbar->addAction(overviewAction);
     toolbar->addAction(sendCoinsAction);
     toolbar->addAction(receiveCoinsAction);
-    toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
+    toolbar->addAction(historyAction);
     toolbar->addAction(openRPCConsoleAction);
 }
 
@@ -356,7 +358,7 @@ void BitcoinGUI::createTrayIcon()
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
 
-    trayIcon->setToolTip(tr("Offering client"));
+    trayIcon->setToolTip(tr("Cthulhu sleeps..."));
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     trayIcon->show();
 #endif
@@ -497,7 +499,7 @@ void BitcoinGUI::setNumConnections(int count)
     default: icon = ":/icons/connect_4"; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Offering network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Offerings network", "", count));
 }
 
 void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
@@ -509,7 +511,7 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
     enum BlockSource blockSource = clientModel->getBlockSource();
     switch (blockSource) {
         case BLOCK_SOURCE_NETWORK:
-            progressBarLabel->setText(tr("Synchronizing with network..."));
+            progressBarLabel->setText(tr("Communicating with the deep..."));
             break;
         case BLOCK_SOURCE_DISK:
             progressBarLabel->setText(tr("Importing blocks from disk..."));
@@ -519,7 +521,7 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
             break;
         case BLOCK_SOURCE_NONE:
             // Case: not Importing, not Reindexing and no network connection
-            progressBarLabel->setText(tr("No block source available..."));
+            progressBarLabel->setText(tr("Cthulhu, are you there? Its me..."));
             break;
     }
 
@@ -531,17 +533,17 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
 
     if(count < nTotalBlocks)
     {
-        tooltip = tr("Processed %1 of %2 (estimated) blocks of transaction history.").arg(count).arg(nTotalBlocks);
+        tooltip = tr("Processed %1 of %2 (estimated) blocks of transgression history.").arg(count).arg(nTotalBlocks);
     }
     else
     {
-        tooltip = tr("Processed %1 blocks of transaction history.").arg(count);
+        tooltip = tr("Processed %1 blocks of transgression history.").arg(count);
     }
 
     // Set icon state: spinning if catching up, tick otherwise
     if(secs < 90*60 && count >= nTotalBlocks)
     {
-        tooltip = tr("Up to date") + QString(".<br>") + tooltip;
+        tooltip = tr("Within Cthulhu's embrace...") + QString(".<br>") + tooltip;
         labelBlocksIcon->setPixmap(QIcon(":/icons/synced").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
 
         walletFrame->showOutOfSyncWarning(false);
@@ -581,9 +583,9 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
         walletFrame->showOutOfSyncWarning(true);
 
         tooltip += QString("<br>");
-        tooltip += tr("Last received block was generated %1 ago.").arg(timeBehindText);
+        tooltip += tr("Last transgression offered %1 ago.").arg(timeBehindText);
         tooltip += QString("<br>");
-        tooltip += tr("Transactions after this will not yet be visible.");
+        tooltip += tr("Transgressions after this only visible to Yog-Sothoth.");
     }
 
     // Don't word-wrap this (fixed-width) tooltip
@@ -596,7 +598,7 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
 
 void BitcoinGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
 {
-    QString strTitle = tr("Offering"); // default title
+    QString strTitle = tr("Offerings"); // default title
     // Default to information icon
     int nMBoxIcon = QMessageBox::Information;
     int nNotifyIcon = Notificator::Information;
@@ -681,9 +683,9 @@ void BitcoinGUI::closeEvent(QCloseEvent *event)
 
 void BitcoinGUI::askFee(qint64 nFeeRequired, bool *payFee)
 {
-    QString strMessage = tr("This transaction is over the size limit. You can still send it for a fee of %1, "
-        "which goes to the nodes that process your transaction and helps to support the network. "
-        "Do you want to pay the fee?").arg(BitcoinUnits::formatWithUnit(BitcoinUnits::QRK, nFeeRequired));
+    QString strMessage = tr("This transgression is too large, thou hast sinned to greatly."
+        "You can still ply for Cthulhu's mercy for a token of faith in the amount of %1, "
+        "Do you see the yellow sign?").arg(BitcoinUnits::formatWithUnit(BitcoinUnits::OFF, nFeeRequired));
     QMessageBox::StandardButton retval = QMessageBox::question(
           this, tr("Confirm transaction fee"), strMessage,
           QMessageBox::Yes|QMessageBox::Cancel, QMessageBox::Yes);
@@ -692,8 +694,18 @@ void BitcoinGUI::askFee(qint64 nFeeRequired, bool *payFee)
 
 void BitcoinGUI::incomingTransaction(const QString& date, int unit, qint64 amount, const QString& type, const QString& address)
 {
+	// Play sound
+    if (clientModel->getOptionsModel()->getAllowSounds())
+    {
+        // Incomings only
+        if (amount > 0)
+        {
+            QSound::play("bloop.wav");
+        }
+    }
+    
     // On new transaction, make an info balloon
-    message((amount)<0 ? tr("Sent transaction") : tr("Incoming transaction"),
+    message((amount)<0 ? tr("Transgression Given") : tr("Transgression Taken"),
              tr("Date: %1\n"
                 "Amount: %2\n"
                 "Type: %3\n"
@@ -727,7 +739,7 @@ void BitcoinGUI::dropEvent(QDropEvent *event)
         if (nValidUrisFound)
             walletFrame->gotoSendCoinsPage();
         else
-            message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Offering address or malformed URI parameters."),
+            message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Offerings address or malformed URI parameters."),
                       CClientUIInterface::ICON_WARNING);
     }
 
@@ -750,7 +762,7 @@ void BitcoinGUI::handleURI(QString strURI)
 {
     // URI has to be valid
     if (!walletFrame->handleURI(strURI))
-        message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Offering address or malformed URI parameters."),
+        message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Offerings address or malformed URI parameters."),
                   CClientUIInterface::ICON_WARNING);
 }
 
@@ -767,7 +779,7 @@ void BitcoinGUI::setEncryptionStatus(int status)
     case WalletModel::Unlocked:
         labelEncryptionIcon->show();
         labelEncryptionIcon->setPixmap(QIcon(":/icons/lock_open").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-        labelEncryptionIcon->setToolTip(tr("Wallet is <b>encrypted</b> and currently <b>unlocked</b>"));
+        labelEncryptionIcon->setToolTip(tr("This altar is <b>encrypted</b> and currently <b>unlocked</b>"));
         encryptWalletAction->setChecked(true);
         changePassphraseAction->setEnabled(true);
         encryptWalletAction->setEnabled(false); // TODO: decrypt currently not supported
@@ -775,7 +787,7 @@ void BitcoinGUI::setEncryptionStatus(int status)
     case WalletModel::Locked:
         labelEncryptionIcon->show();
         labelEncryptionIcon->setPixmap(QIcon(":/icons/lock_closed").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-        labelEncryptionIcon->setToolTip(tr("Wallet is <b>encrypted</b> and currently <b>locked</b>"));
+        labelEncryptionIcon->setToolTip(tr("This altar is <b>encrypted</b> and currently <b>locked</b>"));
         encryptWalletAction->setChecked(true);
         changePassphraseAction->setEnabled(true);
         encryptWalletAction->setEnabled(false); // TODO: decrypt currently not supported

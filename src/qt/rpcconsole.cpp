@@ -306,9 +306,9 @@ void RPCConsole::clear()
                 "b { color: #006060; } "
                 );
 
-    message(CMD_REPLY, (tr("Welcome to the Offering RPC console.") + "<br>" +
-                        tr("Use up and down arrows to navigate history, and <b>Ctrl-L</b> to clear screen.") + "<br>" +
-                        tr("Type <b>help</b> for an overview of available commands.")), true);
+    message(CMD_REPLY, (tr("Welcome to Cthulhu's text worshipping console.") + "<br>" +
+                        tr("Speak directly to the altar from this window to perform the rite of Mu.") + "<br>" +
+                        tr("Type <b>help</b> if thou art new to Cthulhu's grasp.")), true);
 }
 
 void RPCConsole::message(int category, const QString &message, bool html)

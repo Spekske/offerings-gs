@@ -9,9 +9,12 @@
 #include "transactionfilterproxy.h"
 #include "guiutil.h"
 #include "guiconstants.h"
+#include "ledger.h"
 
 #include <QAbstractItemDelegate>
 #include <QPainter>
+#include <QDesktopServices>
+#include <QUrl>
 
 #define DECORATION_SIZE 64
 #define NUM_ITEMS 3
@@ -20,7 +23,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::QRK)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::OFF)
     {
 
     }
@@ -113,8 +116,8 @@ OverviewPage::OverviewPage(QWidget *parent) :
     connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
 
     // init "out of sync" warning labels
-    ui->labelWalletStatus->setText("(" + tr("out of sync") + ")");
-    ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");
+    ui->labelWalletStatus->setText("(" + tr("disconnected from the deep") + ")");
+    ui->labelTransactionsStatus->setText("(" + tr("disconnected from the deep") + ")");
 
     // start with displaying the "out of sync" warnings
     showOutOfSyncWarning(true);
@@ -210,4 +213,16 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
+}
+
+void OverviewPage::on_pushButton_clicked()
+{
+    QString link="http://23skidoo.info/cthulhu";
+        QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_2_clicked()
+{
+    QString link="http://23skidoo.info/cthulhu/publicaltar";
+        QDesktopServices::openUrl(QUrl(link));
 }
