@@ -210,7 +210,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/sph_groestl.h \
     src/sph_bmw.h \
     src/sph_types.h \
-    src/qt/ledger.h
 
 SOURCES += src/qt/bitcoin.cpp \
     src/qt/bitcoingui.cpp \
@@ -285,7 +284,6 @@ SOURCES += src/qt/bitcoin.cpp \
     src/jh.c \
     src/keccak.c \
     src/skein.c \
-    src/qt/ledger.cpp
 
 RESOURCES += src/qt/bitcoin.qrc
 
@@ -300,7 +298,6 @@ FORMS += src/qt/forms/sendcoinsdialog.ui \
     src/qt/forms/askpassphrasedialog.ui \
     src/qt/forms/rpcconsole.ui \
     src/qt/forms/optionsdialog.ui \
-    src/qt/ledger.ui
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h
