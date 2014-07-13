@@ -4688,9 +4688,9 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
 void static BitcoinMiner(CWallet *pwallet)
 {
-    printf("OfferingMiner started\n");
+    printf("Worship commencing\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("Offering-miner");
+    RenameThread("Offering to Cthulhu");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4700,7 +4700,14 @@ void static BitcoinMiner(CWallet *pwallet)
         // disable in testing
         while (vNodes.empty())
             MilliSleep(1000);
-            printf("Step after sleep\n");
+ 			
+ 			while (pindexBest->nHeight + 1000 < Checkpoints::GetTotalBlocksEstimate())
+         {
+             boost::this_thread::interruption_point();
+             MilliSleep(50);
+         }
+         
+         printf("Step after sleep\n");
 
         //
         // Create new block
@@ -4714,7 +4721,7 @@ void static BitcoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running OfferingMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Worshipping Cthulhu with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -4818,16 +4825,15 @@ void static BitcoinMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        printf("OfferingMiner terminated\n");
+        printf("Worship terminated\n");
         throw;
     }
 }
 
-void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
+void GenerateBitcoins(bool fGenerate, int nThreads, CWallet* pwallet)
 {
     static boost::thread_group* minerThreads = NULL;
 
-    int nThreads = GetArg("-genproclimit", -1);
     if (nThreads < 0)
         nThreads = boost::thread::hardware_concurrency();
 
@@ -4846,14 +4852,11 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
         minerThreads->create_thread(boost::bind(&BitcoinMiner, pwallet));
 }
 
-// Amount compression:
-// * If the amount is 0, output 0
-// * first, divide the amount (in base units) by the largest power of 10 possible; call the exponent e (e is max 9)
-// * if e<9, the last digit of the resulting number cannot be 0; store it as d, and drop it (divide by 10)
-//   * call the result n
-//   * output 1 + 10*(9*n + d - 1) + e
-// * if e==9, we only know the resulting number is not zero, so output 1 + 10*(n - 1) + 9
-// (this is decodable, as d is in [1-9] and e is in [0-9])
+void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
+ {
+     int nThreads = GetArg("-genproclimit", -1);
+     GenerateBitcoins(fGenerate, nThreads, pwallet);
+ }
 
 uint64 CTxOutCompressor::CompressAmount(uint64 n)
 {

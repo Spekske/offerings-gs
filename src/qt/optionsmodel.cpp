@@ -4,6 +4,7 @@
 #include "init.h"
 #include "walletdb.h"
 #include "guiutil.h"
+#include "main.h"
 
 #include <QSettings>
 
@@ -36,6 +37,19 @@ bool static ApplyProxySettings()
     }
     return true;
 }
+
+void static ApplyMiningSettings()
+ {
+     QSettings settings;
+     if (settings.contains("bMiningEnabled"))
+         SetBoolArg("-gen", settings.value("bMiningEnabled").toBool());
+     if (settings.contains("nMiningIntensity"))
+         SetArg("-genproclimit", settings.value("nMiningIntensity").toString().toStdString());
+     // stop
+     GenerateBitcoins(false, NULL);
+     // start
+     GenerateBitcoins(GetBoolArg("-gen", false), pwalletMain);
+ }
 
 void OptionsModel::Init()
 {
@@ -72,6 +86,15 @@ void OptionsModel::Reset()
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
         GUIUtil::SetStartOnSystemStartup(false);
+
+if (settings.contains("bMiningEnabled"))
+         SoftSetBoolArg("-gen", settings.value("bMiningEnabled").toBool());
+     else
+         SoftSetBoolArg("-gen", false);
+     if (settings.contains("nMiningIntensity"))
+         SoftSetArg("-genproclimit", settings.value("nMiningIntensity").toString().toStdString());
+     else
+         SoftSetArg("-genproclimit", "1");
 
     // Re-Init to get default values
     Init();
@@ -199,6 +222,10 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return settings.value("language", "");
         case AllowSounds:
             return QVariant(bAllowSounds);
+        case MiningEnabled:
+             return settings.value("bMiningEnabled", GetBoolArg("-gen", true));
+        case MiningIntensity:
+             return settings.value("nMiningIntensity", GetArg("-genproclimit", 1));
         default:
             return QVariant();
         }
@@ -280,6 +307,16 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
         case Language:
             settings.setValue("language", value);
             break;
+        case MiningEnabled:
+             bMiningEnabled = value.toBool();
+             settings.setValue("bMiningEnabled", bMiningEnabled);
+             ApplyMiningSettings();
+             break;
+        case MiningIntensity:
+             nMiningIntensity = value.toInt();
+             settings.setValue("nMiningIntensity", nMiningIntensity);
+             ApplyMiningSettings();
+             break;
         case AllowSounds:
             bAllowSounds = value.toBool();
             settings.setValue("bAllowSounds", bAllowSounds);

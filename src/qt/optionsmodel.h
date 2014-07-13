@@ -30,6 +30,8 @@ public:
         DisplayAddresses,  // bool
         Language,          // QString
         AllowSounds,        // bool
+        MiningEnabled,     // bool
+        MiningIntensity,   // int
         OptionIDRowCount,
     };
 
@@ -59,6 +61,8 @@ private:
     bool fMinimizeOnClose;
     QString language;
     bool bAllowSounds;
+    bool bMiningEnabled;
+    int nMiningIntensity;
 
 signals:
     void displayUnitChanged(int unit);

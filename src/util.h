@@ -402,6 +402,9 @@ bool GetBoolArg(const std::string& strArg, bool fDefault=false);
  */
 bool SoftSetArg(const std::string& strArg, const std::string& strValue);
 
+void SetArg(const std::string& strArg, const std::string& strValue);
+void SetBoolArg(const std::string& strArg, const bool boolValue);
+
 /**
  * Set a boolean argument if it doesn't already have a value
  *

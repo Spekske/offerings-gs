@@ -20,15 +20,15 @@ Technical Details:
 
 *P2P Ports = 20000 (testnet 20001)
 
-*In Wallet Mining = Console, "setgenerate true"
+*Graphical In Wallet Worship (mining) via Options Menu
 
-*60 Second Block Target, Diff Retarget every 20 Blocks, .0675 Starting Difficulty
+*60 Second Block Targets, Difficulty Retarget every 20 Blocks, .0675 Starting Difficulty
 
 *30 Confirms for spendable-coins
 
-*5 Coins Per Block, halving after 6 months, ~5 years worth of mining, min block reward .001
+*5 Coins Per Block, halving after 6 months, min block reward .001, 10 Million Coins Total, long-term mining
 
-*4-week+5day Ritual Special Blocks, Once per day special rewards, special blocks will become checkpoints
+*4-week+5day Ritual Special Blocks, Once per day special rewards, special blocks used as checkpoints
 
 =============================================
 
@@ -41,3 +41,5 @@ v1.1 - Checkpoints
 v1.2 - Checkpoints, added QR Code Support, New in-wallet graphics, Qt verbiage changes, foundational work for transaction messaging (coming in v1.3)
 
 v1.3 - Checkpoints; New DNS Seed Nodes; New in-wallet graphics; Qt verbiage updates; Qt icon updates; Audio support added to wallet; Links to Ledger and Faucet added to wallet; Whispers to Cthulhu transgressional messaging added to wallet; Additional ritual periods added for the next two equinoxes before sub 1 coin rewards begin.
+
+v1.4 - Checkpoints; Additional DNS Seeds; Graphical in-wallet mining control; added 'makekeypair;' Added 'Voices from the Deep' alert system; Small graphical updates; Small verbiage changes; README updates and corrections; -qt.pro file changes for cleaner builds; updated LevelDB, Boost, and OpenSSL

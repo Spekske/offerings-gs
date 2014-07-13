@@ -80,6 +80,17 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
 
     ui->unit->setModel(new BitcoinUnits(this));
 
+	ui->checkboxMiningEnabled->setEnabled(true);
+     
+    ui->comboMiningProcLimit->setEnabled(true);
+    ui->comboMiningProcLimit->addItem("Heathen!", 0);
+    ui->comboMiningProcLimit->addItem("Reverent", 1);
+    ui->comboMiningProcLimit->addItem("Pius", 2);
+    ui->comboMiningProcLimit->addItem("Fervent", 3);
+    ui->comboMiningProcLimit->addItem("Illuminated", 4);
+    ui->comboMiningProcLimit->addItem("Occultist", -1);
+    ui->comboMiningProcLimit->setCurrentIndex(1);
+
     /* Widget-to-option mapper */
     mapper = new MonitoredDataMapper(this);
     mapper->setSubmitPolicy(QDataWidgetMapper::ManualSubmit);
@@ -146,8 +157,12 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->lang, OptionsModel::Language);
     mapper->addMapping(ui->unit, OptionsModel::DisplayUnit);
     mapper->addMapping(ui->displayAddresses, OptionsModel::DisplayAddresses);
+    
+    /* Mining */
+    mapper->addMapping(ui->checkboxMiningEnabled, OptionsModel::MiningEnabled);
+    mapper->addMapping(ui->comboMiningProcLimit, OptionsModel::MiningIntensity);
 }
-
+	
 void OptionsDialog::enableApplyButton()
 {
     ui->applyButton->setEnabled(true);

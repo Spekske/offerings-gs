@@ -277,13 +277,21 @@ Value sendtoaddress(const Array& params, bool fHelp)
         wtx.mapValue["to"]      = params[3].get_str();
         
     // Transaction comment
+
 	std::string txcomment;
+
     if (params.size() > 4 && params[4].type() != null_type && !params[4].get_str().empty())
+
 	{
+
         txcomment = params[4].get_str();
+
 		if (txcomment.length() > MAX_TX_COMMENT_LEN)
+
 			txcomment.resize(MAX_TX_COMMENT_LEN);
+
 	}
+
 
     if (pwalletMain->IsLocked())
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
@@ -676,11 +684,14 @@ Value sendmany(const Array& params, bool fHelp)
     CWalletTx wtx;
 	std::string strTxComment;
     
+
     wtx.strFromAccount = strAccount;
     if (params.size() > 3 && params[3].type() != null_type && !params[3].get_str().empty())
         wtx.mapValue["comment"] = params[3].get_str();
     if (params.size() > 4 && params[4].type() != null_type && !params[4].get_str().empty())
+
         strTxComment = params[4].get_str();
+
 
     set<CBitcoinAddress> setAddress;
     vector<pair<CScript, int64> > vecSend;
@@ -1591,32 +1602,32 @@ Value listlockunspent(const Array& params, bool fHelp)
 }
 
 Value makekeypair(const Array& params, bool fHelp)
-{
-    if (fHelp || params.size() > 1)
-        throw runtime_error(
-            "makekeypair [prefix]\n"
-            "Make a public/private key pair.\n"
-            "[prefix] is optional preferred prefix for the public key.\n");
-
-    string strPrefix = "";
-    if (params.size() > 0)
-        strPrefix = params[0].get_str();
-
-    CKey key;
-    int nCount = 0;
-    do
-    {
-        key.MakeNewKey(false);
-        nCount++;
-    } while (nCount < 10000 && strPrefix != HexStr(key.GetPubKey().Raw()).substr(0, strPrefix.size()));
-
-    if (strPrefix != HexStr(key.GetPubKey().Raw()).substr(0, strPrefix.size()))
-        return Value::null;
-
-    bool fCompressed;
-    CSecret vchSecret = key.GetSecret(fCompressed);
-    Object result;
-    result.push_back(Pair("PublicKey", HexStr(key.GetPubKey().Raw())));
-    result.push_back(Pair("PrivateKey", CBitcoinSecret(vchSecret, fCompressed).ToString()));
-    return result;
-}
+ {
+     if (fHelp || params.size() > 1)
+         throw runtime_error(
+             "makekeypair [prefix]\n"
+             "Make a public/private key pair.\n"
+             "[prefix] is optional preferred prefix for the public key.\n");
+ 
+     string strPrefix = "";
+     if (params.size() > 0)
+         strPrefix = params[0].get_str();
+ 
+     CKey key;
+     int nCount = 0;
+     do
+     {
+         key.MakeNewKey(false);
+         nCount++;
+     } while (nCount < 10000 && strPrefix != HexStr(key.GetPubKey().Raw()).substr(0, strPrefix.size()));
+ 
+     if (strPrefix != HexStr(key.GetPubKey().Raw()).substr(0, strPrefix.size()))
+         return Value::null;
+ 
+     bool fCompressed;
+     CSecret vchSecret = key.GetSecret(fCompressed);
+     Object result;
+     result.push_back(Pair("PublicKey", HexStr(key.GetPubKey().Raw())));
+     result.push_back(Pair("PrivateKey", CBitcoinSecret(vchSecret, fCompressed).ToString()));
+     return result;
+ }
