@@ -11,7 +11,7 @@
 const std::string CLIENT_NAME("Offerings to Cthulhu");
 
 // Client version number
-#define CLIENT_VERSION_SUFFIX   "-azathoth"
+#define CLIENT_VERSION_SUFFIX   "-yidhra"
 
 
 // The following part of the code determines the CLIENT_BUILD variable.
