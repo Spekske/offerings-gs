@@ -123,6 +123,7 @@ QMAKE_CXXFLAGS_WARN_ON = -fdiagnostics-show-option -Wall -Wextra -Wformat -Wform
 # Input
 DEPENDPATH += src src/json src/qt
 HEADERS += src/qt/bitcoingui.h \
+	src/qt/blockbrowser.h \
     src/qt/transactiontablemodel.h \
     src/qt/addresstablemodel.h \
     src/qt/optionsdialog.h \
@@ -213,6 +214,7 @@ HEADERS += src/qt/bitcoingui.h \
 
 SOURCES += src/qt/bitcoin.cpp \
     src/qt/bitcoingui.cpp \
+    src/qt/blockbrowser.cpp \
     src/qt/transactiontablemodel.cpp \
     src/qt/addresstablemodel.cpp \
     src/qt/optionsdialog.cpp \
@@ -288,6 +290,7 @@ SOURCES += src/qt/bitcoin.cpp \
 RESOURCES += src/qt/bitcoin.qrc
 
 FORMS += src/qt/forms/sendcoinsdialog.ui \
+	src/qt/forms/blockbrowser.ui \
     src/qt/forms/addressbookpage.ui \
     src/qt/forms/signverifymessagedialog.ui \
     src/qt/forms/aboutdialog.ui \

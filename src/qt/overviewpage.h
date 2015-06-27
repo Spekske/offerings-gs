@@ -54,6 +54,8 @@ private slots:
     void updateAlerts(const QString &warnings);
     void on_pushButton_clicked();
     void on_pushButton_2_clicked();
+    void on_commandLinkButton_clicked();
+    void on_commandLinkButton_2_clicked();
 };
 
 #endif // OVERVIEWPAGE_H

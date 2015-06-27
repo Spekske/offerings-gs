@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case OFF: return QString("Offeringss");
-    case cOFF: return QString("Centum-Offeringss (1 / 100)");
-    case mOFF: return QString("Milli-Offeringss (1 / 1,000)");
+    case OFF: return QString("Offerings");
+    case cOFF: return QString("Centum-Offerings (1 / 100)");
+    case mOFF: return QString("Milli-Offerings (1 / 1,000)");
     default: return QString("???");
     }
 }
