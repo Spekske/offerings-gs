@@ -30,6 +30,7 @@ Technical Details:
 
 *4-week+5day Ritual Special Blocks, Once per day special rewards, special blocks used as checkpoints
 
+Offerings uses CreativeCommons Licensed Art from: Nick Grey (http://du1l.deviantart.com/)
 =============================================
 
 Changelog:
@@ -43,3 +44,5 @@ v1.2 - Checkpoints, added QR Code Support, New in-wallet graphics, Qt verbiage c
 v1.3 - Checkpoints; New DNS Seed Nodes; New in-wallet graphics; Qt verbiage updates; Qt icon updates; Audio support added to wallet; Links to Ledger and Faucet added to wallet; Whispers to Cthulhu transgressional messaging added to wallet; Additional ritual periods added for the next two equinoxes before sub 1 coin rewards begin.
 
 v1.4 - Checkpoints; Additional DNS Seeds; Graphical in-wallet mining control; added 'makekeypair;' Added 'Voices from the Deep' alert system; Small graphical updates; Small verbiage changes; README updates and corrections; -qt.pro file changes for cleaner builds; updated LevelDB, Boost, and OpenSSL
+
+v1.5 - Checkpoints; Updated DNS Seeds; Graphical changes to wallet; Groundwork for Renewed Ritual scheduled for Autumnal Equinox - All Hallow's Eve 2015 in v1.6; In-wallet Ledger; New Splash-screen.

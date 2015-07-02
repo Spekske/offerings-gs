@@ -19,8 +19,8 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f) :
     // define text to place
     QString titleText       = QString(QApplication::applicationName()).replace(QString("-testnet"), QString(""), Qt::CaseSensitive); // cut of testnet, place it as single object further down
     QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
-    QString copyrightText   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Developers"));
-    QString copyrightText2  = QChar(0xA9)+QString(" 2013-2014 ") + QString(tr("Hastur; Yog-Sothoth; Hagbard Celine"));
+    QString copyrightText   = QChar(0xA9)+QString(" 2013-2015") + QString(tr("Hagbard Celine"));
+    QString copyrightText2  = QString(" ") + QString(tr(" "));
     QString testnetAddText  = QString(tr("[testnet]")); // define text to place as single text object
 
     QString font            = "Arial";
@@ -35,7 +35,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f) :
     }
 
     QPainter pixPaint(&newPixmap);
-    pixPaint.setPen(QColor(100,100,100));
+    pixPaint.setPen(QColor(000,000,000));
 
     // check font size and drawing with
     pixPaint.setFont(QFont(font, 33*fontFactor));

@@ -1,6 +1,6 @@
 TEMPLATE = app
-TARGET = Offerings-qt
-macx:TARGET = "Offerings-Qt"
+TARGET = Offerings
+macx:TARGET = "Offerings"
 VERSION = 1.4.0
 INCLUDEPATH += src src/json src/qt
 QT += network

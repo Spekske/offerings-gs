@@ -28,11 +28,20 @@
     <height>0</height>
    </size>
   </property>
+  <property name="cursor">
+   <cursorShape>OpenHandCursor</cursorShape>
+  </property>
   <property name="acceptDrops">
    <bool>false</bool>
   </property>
   <property name="windowTitle">
-   <string>Know Your Endorser!</string>
+   <string>Public Transgressions</string>
+  </property>
+  <property name="toolTip">
+   <string>A list of everyone's sins, kept in blood.</string>
+  </property>
+  <property name="statusTip">
+   <string>Eeeevil; EEEEVIL!</string>
   </property>
   <layout class="QGridLayout">
    <property name="sizeConstraint">
@@ -70,7 +79,7 @@
           </font>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20px; font-weight:600; color:#000000;&quot;&gt;Decoder Ring &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20px; font-weight:600; color:#000000;&quot;&gt;Ledger &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>

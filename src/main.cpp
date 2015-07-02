@@ -1229,6 +1229,41 @@ int64 static GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
     else if(nHeight == 926080) {nSubsidy = 1000 * COIN;}
 	else if(nHeight == 930666) {nSubsidy = 10000 * COIN;}
 	
+	//the renewed ritual soft-forking in v1.6, Autumn-Winter, 2015
+	else if(nHeight == 1345600) {nSubsidy = .00000001 * COIN;}
+    else if(nHeight == 1345640) {nSubsidy = .0000001 * COIN;}
+    else if(nHeight == 1345680) {nSubsidy = .000001 * COIN;}
+    else if(nHeight == 1345720) {nSubsidy = .00001 * COIN;}
+    else if(nHeight == 1345760) {nSubsidy = .0001 * COIN;}
+    else if(nHeight == 1345800) {nSubsidy = .001 * COIN;}
+    else if(nHeight == 1345840) {nSubsidy = .01 * COIN;}
+    else if(nHeight == 1345880) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 1345920) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 1345960) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 1346020) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 1346060) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 1346100) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 1346140) {nSubsidy = 1 * COIN;}
+    else if(nHeight == 1346200) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 1346240) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 1346280) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 1346320) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 1346360) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 1346400) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 1346440) {nSubsidy = 10 * COIN;}
+    else if(nHeight == 1346480) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 1346520) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 1346560) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 1346600) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 1346640) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 1346680) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 1346720) {nSubsidy = 100 * COIN;}
+    else if(nHeight == 1346760) {nSubsidy = 1000 * COIN;}
+    else if(nHeight == 1346800) {nSubsidy = 1000 * COIN;}
+    else if(nHeight == 1346840) {nSubsidy = 1000 * COIN;}
+    else if(nHeight == 1346880) {nSubsidy = 1000 * COIN;}
+	else if(nHeight == 1347666) {nSubsidy = 10000 * COIN;}
+	
     nSubsidy >>= (nHeight / 259200);
     if (nSubsidy < nBlockRewardMinimumCoin) {nSubsidy = nBlockRewardMinimumCoin;}
 

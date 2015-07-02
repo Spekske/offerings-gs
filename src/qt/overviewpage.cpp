@@ -215,13 +215,13 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
     ui->labelTransactionsStatus->setVisible(fShow);
 }
 
-void OverviewPage::on_commandLinkButton_clicked()
+void OverviewPage::on_pushButton_clicked()
 {
     QString link="http://23skidoo.info/cthulhu";
         QDesktopServices::openUrl(QUrl(link));
 }
 
-void OverviewPage::on_commandLinkButton_2_clicked()
+void OverviewPage::on_pushButton_2_clicked()
 {
     QString link="http://23skidoo.info/cthulhu/publicaltar";
         QDesktopServices::openUrl(QUrl(link));
