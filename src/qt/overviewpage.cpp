@@ -10,6 +10,7 @@
 #include "guiutil.h"
 #include "guiconstants.h"
 #include "ledger.h"
+#include "blockbrowser.h"
 
 #include <QAbstractItemDelegate>
 #include <QPainter>
@@ -215,13 +216,13 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
     ui->labelTransactionsStatus->setVisible(fShow);
 }
 
-void OverviewPage::on_pushButton_clicked()
+void OverviewPage::on_commandLinkButton_clicked()
 {
-    QString link="http://23skidoo.info/cthulhu";
-        QDesktopServices::openUrl(QUrl(link));
+    blockbrowser =new BlockBrowser(this);
+    blockbrowser->show();
 }
 
-void OverviewPage::on_pushButton_2_clicked()
+void OverviewPage::on_commandLinkButton_2_clicked()
 {
     QString link="http://23skidoo.info/cthulhu/publicaltar";
         QDesktopServices::openUrl(QUrl(link));

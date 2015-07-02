@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "ledger.h"
+#include "blockbrowser.h"
 
 namespace Ui {
     class OverviewPage;
@@ -39,6 +40,7 @@ private:
     Ui::OverviewPage *ui;
     ClientModel *clientModel;
     WalletModel *walletModel;
+    BlockBrowser *blockbrowser;
     qint64 currentBalance;
     qint64 currentUnconfirmedBalance;
     qint64 currentImmatureBalance;
@@ -52,8 +54,8 @@ private slots:
     void updateDisplayUnit();
     void handleTransactionClicked(const QModelIndex &index);
     void updateAlerts(const QString &warnings);
-    void on_pushButton_clicked();
-    void on_pushButton_2_clicked();
+    void on_commandLinkButton_clicked();
+    void on_commandLinkButton_2_clicked();
 };
 
 #endif // OVERVIEWPAGE_H
