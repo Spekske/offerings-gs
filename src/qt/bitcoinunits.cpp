@@ -1,3 +1,7 @@
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 #include "bitcoinunits.h"
 
 #include <QStringList>
@@ -11,9 +15,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(OFF);
-    unitlist.append(cOFF);
-    unitlist.append(mOFF);
+    unitlist.append(BTC);
+    unitlist.append(cBTC);
+    unitlist.append(mBTC);
     return unitlist;
 }
 
@@ -21,9 +25,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case OFF:
-    case cOFF:
-    case mOFF:
+    case BTC:
+    case cBTC:
+    case mBTC:
         return true;
     default:
         return false;
@@ -34,9 +38,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case OFF: return QString("OFF");
-    case cOFF: return QString("cOFF");
-    case mOFF: return QString("mOFF");
+    case BTC: return QString("OFF");
+    case cBTC: return QString("cOFF");
+    case mBTC: return QString::fromUtf8("mOFF");
     default: return QString("???");
     }
 }
@@ -45,9 +49,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case OFF: return QString("Offerings");
-    case cOFF: return QString("Centum-Offerings (1 / 100)");
-    case mOFF: return QString("Milli-Offerings (1 / 1,000)");
+    case BTC: return QString("Offerings");
+    case cBTC: return QString("centiOfferings (1 / 100)");
+    case mBTC: return QString("milliOfferings (1 / 1,000)");
     default: return QString("???");
     }
 }
@@ -56,10 +60,21 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case OFF:  return 100000;
-    case cOFF: return 1000;
-    case mOFF: return 100;
+    case BTC:  return 100000;
+    case cBTC: return 1000;
+    case mBTC: return 100;
     default:   return 100000;
+    }
+}
+
+qint64 BitcoinUnits::maxAmount(int unit)
+{
+    switch(unit)
+    {
+    case BTC:  return Q_INT64_C(210000000);
+    case cBTC: return Q_INT64_C(21000000000);
+    case mBTC: return Q_INT64_C(210000000000);
+    default:   return 0;
     }
 }
 
@@ -67,9 +82,9 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case OFF: return 17; // trillions (# digits, without commas)
-    case cOFF: return 19; // *100
-    case mOFF: return 20; // *1,000
+    case BTC: return 17; // trillions (# digits, without commas)
+    case cBTC: return 19; // *100
+    case mBTC: return 20; // *1,000
     default: return 0;
     }
 }
@@ -78,9 +93,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case OFF: return 5;
-    case cOFF: return 3;
-    case mOFF: return 2;
+    case BTC: return 5;
+    case cBTC: return 3;
+    case mBTC: return 2;
     default: return 0;
     }
 }
