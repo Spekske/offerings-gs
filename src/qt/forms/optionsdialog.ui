@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>560</width>
+    <width>586</width>
     <height>400</height>
    </rect>
   </property>
@@ -20,7 +20,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>5</number>
      </property>
      <widget class="QWidget" name="tabMain">
       <attribute name="title">
@@ -33,7 +33,7 @@
           <string>Automatically start Offerings after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start Offerings on system login</string>
+          <string>&amp;Commence Offerings on system login</string>
          </property>
         </widget>
        </item>
@@ -408,30 +408,27 @@
        </item>
       </layout>
      </widget>
-     
      <widget class="QWidget" name="tabMining">
       <attribute name="title">
-       <string>&amp;Mining</string>
+       <string>&amp;Worship</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Mining">
-      
        <item>
         <widget class="QCheckBox" name="checkboxMiningEnabled">
          <property name="toolTip">
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Whether to enabled Offerings mining by default.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="text">
-          <string>&amp;Mining enabled</string>
+          <string>&amp;Worship enabled</string>
          </property>
         </widget>
        </item>
-       
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2_Mining">        
+        <layout class="QHBoxLayout" name="horizontalLayout_2_Mining">
          <item>
           <widget class="QLabel" name="labelMiningProcLimit">
            <property name="text">
-            <string>&amp;Mining limit:</string>
+            <string>&amp;Worship ferverance:</string>
            </property>
            <property name="textFormat">
             <enum>Qt::PlainText</enum>
@@ -463,11 +460,8 @@
          </property>
         </spacer>
        </item>
-       
       </layout>
      </widget>
-     
-     
      <widget class="QWidget" name="tabDisplay">
       <attribute name="title">
        <string>&amp;Display</string>
