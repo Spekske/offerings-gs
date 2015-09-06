@@ -43,7 +43,7 @@ public:
         pchMessageStart[2] = 0xfe;
         pchMessageStart[3] = 0xdd;
         vAlertPubKey = ParseHex("044b612d1775814a3a07e9ec4209afed2884f6f5ede1d177da30b6b8f3327652b01f67708349a239cb701b226715680e9f31a4d3d0ca803b76f606335077fcd803");
-        nDefaultPort = 20001;
+        nDefaultPort = 20000;
         nRPCPort = 11928;
         bnProofOfWorkLimit = bnMainProofOfWorkLimit;
         nSubsidyHalvingInterval = 259200;
@@ -70,6 +70,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0xb3f4e4e9bbae6f63a0693661c510a33dca69489bfff65a88aaeb85f30d30b485"));
 
         vSeeds.push_back(CDNSSeedData("23skidoo.info", "23skidoo.info"));
+        vSeeds.push_back(CDNSSeedData("offeringstocthulhu.info", "offeringstocthulhu.info"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(58);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(9);

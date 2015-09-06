@@ -240,8 +240,8 @@ void BitcoinGUI::createActions(bool fIsTestnet)
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
     tabGroup->addAction(receiveCoinsAction);
 
-    historyAction = new QAction(QIcon(":/icons/history"), tr("&Fellow Cultists"), this);
-    historyAction->setStatusTip(tr("All of your fellow worshipers with whom you've transgressed"));
+    historyAction = new QAction(QIcon(":/icons/history"), tr("&Transgressions"), this);
+    historyAction->setStatusTip(tr("A list of your sins"));
     historyAction->setToolTip(historyAction->statusTip());
     historyAction->setCheckable(true);
     historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_4));
